@@ -1,8 +1,16 @@
 import React from 'react';
+import ReactDOM from 'react-dom';
 import JokeGenerator from './jokeGenerator';
 
-const App = () => (
-    <div style={styles}>
+// const App = () => (
+//     <div >
+//         <JokeGenerator />
+//     </div>
+// )
+
+ReactDOM.render(
+    <React.StrictMode>
         <JokeGenerator />
-    </div>
-)
+    </React.StrictMode>,
+    document.getElementById('root')
+);
